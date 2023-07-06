@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title class="title">Survey!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 id="title">Take this survey</h1>
+    <p id="description">Tell us about your experience!</p>
+    <form id="survey-form">
+
+        <fieldset>
+
+            <label id="name-label" for="name"> Name <br>
+                <input id="name" required type="text" placeholder="Enter your name" class="input">
+            </label>
+
+            <label id="email-label" for="email"> <br>
+                What's your email? <br><input id="email" type="email" required placeholder="Enter your email"
+                    class="input">
+            </label>
+            <br>
+
+            <label id="number-label" for="number">Input your age<br></label>
+            <input id="number" type="number" placeholder="Age" min="15" max="100" class="input">
+            <br>
+
+            <label for="options" id="dropdown-label">How did you find about us?<br>
+                <select id="dropdown" class="input">
+                    <option value=""> Select one of these</option>
+                    <option value="1"> Youtube</option>
+                    <option value="2"> Facebook(Meta)</option>
+                    <option value="3"> Instagram</option>
+                    <option value="4"> Reddit</option>
+                    <option value="5"> Twitter</option>
+                </select>
+            </label> <br>
+
+            <label for="radio">Would you reccomend our site to a friend?<br>
+                <input type="radio" name="radio-button" value="Yes" class="choose">Yes
+                <input type="radio" name="radio-button" value="No" class="choose">No
+            </label> <br>
+
+            <label>What language would you like to learn?(Check all that apply)<br>
+                <input type="checkbox" value="C++" class="language">C++ <br>
+                <input type="checkbox" value="Python" class="language">Python <br>
+                <input type="checkbox" value="C#" class="language">C# <br>
+                <input type="checkbox" value="Java" class="language">Java
+            </label> <br>
+
+            <p id="paragraph">Any suggestions?</p>
+            <textarea class="input">Help us make the survey better!</textarea>
+            <br>
+            <input id="submit" type="submit" class="input">
+        </fieldset>
+    </form>
+</body>
+
+</html>
